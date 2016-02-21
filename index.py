@@ -79,6 +79,7 @@ predition=pre
 print "<html>"
 print "<head>"
 print "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />"
+print "<meta name='author' content='Yi-Nung Yeh'>"
 print "<title>Jokes Recommendation App</title>"
 print "<link href='https://fonts.googleapis.com/css?family=Lobster|Patua+One|Fredericka+the+Great' rel='stylesheet' type='text/css'>"
 print "<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>"

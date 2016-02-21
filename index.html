@@ -58,6 +58,36 @@ background-color:#9cafb7;
 .button:hover {
     background-color: #4281a4;
 }
+.nonglory{
+    color:white; font-weight:900; text-shadow: 5px 5px 0 #fe938c, 7px 7px 0px #ffffff;
+}
+.glory{
+    filter: glow(color:#ffffff, strength=1); color:white; font-weight:900; text-shadow: 1px 1px 5px #ffffff;
+}
+.glory2{
+    filter: glow(color:#ffffff, strength=2); color:white; font-weight:900; text-shadow: 1.3px 1.3px 6.5px #ffffff;
+}
+.glory3{
+    filter: glow(color:#ffffff, strength=3); color:white; font-weight:900; text-shadow: 1.6px 1.6px 8px #ffffff;
+}
+.glory4{
+    filter: glow(color:#ffffff, strength=4); color:white; font-weight:900; text-shadow: 2px 2px 10px #ffffff;
+}
+.glory5{
+    filter: glow(color:#ffffff, strength=5); color:white; font-weight:900; text-shadow: 2.3px 2.3px 11.5px #ffffff;
+}
+.glory6{
+    filter: glow(color:#ffffff, strength=6); color:white; font-weight:900; text-shadow: 2.6px 2.6px 13px #ffffff;
+}
+.glory7{
+    filter: glow(color:#ffffff, strength=7); color:white; font-weight:900; text-shadow: 3px 3px 15px #ffffff;
+}
+.glory8{
+    filter: glow(color:#ffffff, strength=8); color:white; font-weight:900; text-shadow: 3.3px 3.3px 16.5px #ffffff;
+}
+.glory9{
+    filter: glow(color:#ffffff, strength=9); color:white; font-weight:900; text-shadow: 3.6px 3.6px 18px #ffffff;
+}
 </style>
 <script language="javascript">
 function reSize(){
@@ -67,9 +97,10 @@ window.onload=reSize;
 </script> 
 </head>
 <body>
-<div id='Header'> <h1>Jokes Recommendation App</h1> </div>
+
+<div id='Header'> <h1 id="title" class="nonglory" >Jokes Recommendation App</h1> </div>
 <div id='Body'>
-    <a class='button' href='./ind.html' target='abc'>Index</a> <a class="button" href="./jokes/init1.html" target="abc">E Joke 1</a> <a class="button" href="./jokes/init2.html" target="abc">E Joke 2</a> <a class="button" href="./jokes/init3.html" target="abc">E Joke 3</a> <a class="button" href="./jokes/init4.html" target="abc">E Joke 4</a> <a class="button" href="./jokes/init5.html" target="abc">E Joke 5</a> <a class="button" href="./jokes/init6.html" target="abc">E Joke 6</a> <a class="button" href="./jokes/init7.html" target="abc">E Joke 7</a> <a class="button" href="./jokes/init8.html" target="abc">E Joke 8</a> <a class="button" href="./jokes/init9.html" target="abc">E Joke 9</a> <a class="button"  href="./jokes/init10.html" target="abc">E Joke 10</a>
+    <a class='button' href='./ind.html' target='abc'>Index</a> <a class="button" onclick="myFunction()" href="./jokes/init1.html" target="abc">E Joke 1</a> <a class="button" onclick="myFunction()" href="./jokes/init2.html" target="abc">E Joke 2</a> <a class="button" onclick="myFunction()" href="./jokes/init3.html" target="abc">E Joke 3</a> <a class="button" onclick="myFunction()" href="./jokes/init4.html" target="abc">E Joke 4</a> <a class="button" onclick="myFunction()" href="./jokes/init5.html" target="abc">E Joke 5</a> <a class="button" onclick="myFunction()" href="./jokes/init6.html" target="abc">E Joke 6</a> <a class="button" onclick="myFunction()" href="./jokes/init7.html" target="abc">E Joke 7</a> <a class="button" onclick="myFunction()" href="./jokes/init8.html" target="abc">E Joke 8</a> <a class="button" onclick="myFunction()" href="./jokes/init9.html" target="abc">E Joke 9</a> <a class="button" onclick="myFunction()"  href="./jokes/init10.html" target="abc">E Joke 10</a>
     <div style="padding-top: 5%">
     <form style="text-align:center" action='index.py' method='POST' id='carform'>
     <input type='submit' style="font-size: 85%; padding: 0.18%" value="Rate Jokes!">
@@ -317,5 +348,31 @@ window.onload=reSize;
     </div>
     <iframe frameborder="0" width="100%" src="./ind.html" name="abc" id="frameid"></iframe> 
 </div>
+<script language="javascript">
+count=0;
+var myFunction=function()
+{
+    count++;
+    console.log(count)
+    if(count==1)
+        document.getElementById("title").className = "glory";
+    else if(count==2)
+        document.getElementById("title").className = "glory2";
+    else if(count==3)
+        document.getElementById("title").className = "glory3";
+    else if(count==4)
+        document.getElementById("title").className = "glory4";
+    else if(count==5)
+        document.getElementById("title").className = "glory5";
+    else if(count==6)
+        document.getElementById("title").className = "glory6";
+    else if(count==7)
+        document.getElementById("title").className = "glory7";
+    else if(count==8)
+        document.getElementById("title").className = "glory8";
+    else
+        document.getElementById("title").className = "glory9";
+};
+</script>
 </body>
 </html>

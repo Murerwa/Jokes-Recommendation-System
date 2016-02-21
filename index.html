@@ -1,0 +1,321 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<title>Jokes Recommendation App</title>
+<link href='https://fonts.googleapis.com/css?family=Lobster|Patua+One|Fredericka+the+Great' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+#Header{
+width:100%;
+height:20%;
+text-align:center;
+line-height:280%;
+font-family: 'Lobster', cursive;
+font-size:200%;
+color:#fffaf3;
+font-weight:bold;
+background-color:#fe938c;
+text-shadow: 5px 5px 0 #fe938c, 7px 7px 0 #fffaf3;
+}
+#body{
+width:100%;
+height:50%;
+text-align:center;
+font-family: 'Source Sans Pro', sans-serif;
+font-size:100%;
+color:#000000;
+background-color:#ead2ac;
+}
+#Footer{
+width:100%;
+height:10%;
+text-align:center;
+line-height:10%;
+font-size:100%;
+color:#fffaf3;
+font-weight:bold;
+background-color:#9cafb7;
+}
+.button {
+    display: inline-block;
+    background-color: #9cafb7; /* Green */
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    width:5.075%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight:bold;
+    display: inline-block;
+    font-size: 85.5%;
+    cursor: pointer;
+    float: left;
+}
+
+.button:hover {
+    background-color: #4281a4;
+}
+</style>
+<script language="javascript">
+function reSize(){
+　　parent.document.all.frameid.height=0.6*document.body.scrollHeight; 
+} 
+window.onload=reSize;
+</script> 
+</head>
+<body>
+<div id='Header'> <h1>Jokes Recommendation App</h1> </div>
+<div id='Body'>
+    <a class='button' href='./ind.html' target='abc'>Index</a> <a class="button" href="./jokes/init1.html" target="abc">E Joke 1</a> <a class="button" href="./jokes/init2.html" target="abc">E Joke 2</a> <a class="button" href="./jokes/init3.html" target="abc">E Joke 3</a> <a class="button" href="./jokes/init4.html" target="abc">E Joke 4</a> <a class="button" href="./jokes/init5.html" target="abc">E Joke 5</a> <a class="button" href="./jokes/init6.html" target="abc">E Joke 6</a> <a class="button" href="./jokes/init7.html" target="abc">E Joke 7</a> <a class="button" href="./jokes/init8.html" target="abc">E Joke 8</a> <a class="button" href="./jokes/init9.html" target="abc">E Joke 9</a> <a class="button"  href="./jokes/init10.html" target="abc">E Joke 10</a>
+    <div style="padding-top: 5%">
+    <form style="text-align:center" action='index.py' method='POST' id='carform'>
+    <input type='submit' style="font-size: 100%; padding: 0.5%" value="Get Recommendations!">
+    <label>Joke 1</label>
+    <select name='rate1' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 2</label>
+    <select name='rate2' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 3</label>
+    <select name='rate3' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 4</label>
+    <select name='rate4' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 5</label>
+    <select name='rate5' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 6</label>
+    <select name='rate6' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 7</label>
+    <select name='rate7' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 8</label>
+    <select name='rate8' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 9</label>
+    <select name='rate9' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    <label>Joke 10</label>
+    <select name='rate10' form='carform'>
+    <option value='-10'>-10</option>
+    <option value='-9'>-9</option>
+    <option value='-8'>-8</option>
+    <option value='-7'>-7</option>
+    <option value='-6'>-6</option>
+    <option value='-5'>-5</option>
+    <option value='-4'>-4</option>
+    <option value='-3'>-3</option>
+    <option value='-2'>-2</option>
+    <option value='-1'>-1</option>
+    <option value='0' selected>0</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    </select>
+    </form>
+    </div>
+    <iframe frameborder="0" width="100%" src="./ind.html" name="abc" id="frameid"></iframe> 
+</div>
+</body>
+</html>

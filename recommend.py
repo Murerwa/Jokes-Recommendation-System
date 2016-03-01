@@ -38,7 +38,7 @@ with open('./jester-data-2.csv', 'r') as f:
 predition={}
 for j in xrange(1,1+num_jokes):
     if userscore[j]==99:
-        simi_sum=1
+        simi_sum=0
         weighted_sum=0
         predit=0
         for k in xrange(0,length):

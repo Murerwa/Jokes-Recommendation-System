@@ -80,7 +80,7 @@ print "<html>"
 print "<head>"
 print "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />"
 print "<meta name='description' content='Jokes Recommendation System'>"
-print "<meta name='keywords' content='HTML,CSS,Python,JavaScript'>
+
 print "<meta name='author' content='Yi-Nung Yeh'>"
 print "<link rel='Shortcut Icon' type='image/x-icon' href='./smile.ico'/>"
 print "<title>Jokes Recommendation App</title>"
@@ -157,23 +157,20 @@ print "</head>"
 print "<body>"
 print "<div id='Header'> <h1 id='title' class='nonglory'>Jokes Recommendation App</h1> </div>"
 print "<div id='Body'>"
-print "<a class='button' href='./index.html'>Index</a><a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[0])+".html' target='abc'>Joke 1</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[1])+".html' target='abc'>Joke 2</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[2])+".html' target='abc'>Joke 3</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[3])+".html' target='abc'>Joke 4</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[4])+".html' target='abc'>Joke 5</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[5])+".html' target='abc'>Joke 6</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[6])+".html' target='abc'>Joke 7</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[7])+".html' target='abc'>Joke 8</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[8])+".html' target='abc'>Joke 9</a> <a class='button' onclick='myFunction()'  href='./jokes/init"+str(predition[9])+".html' target='abc'>Joke 10</a>"
+print "<a class='button' href='./recommendation_index.html'>Index</a><a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[0])+".html' target='abc'>Joke 1</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[1])+".html' target='abc'>Joke 2</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[2])+".html' target='abc'>Joke 3</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[3])+".html' target='abc'>Joke 4</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[4])+".html' target='abc'>Joke 5</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[5])+".html' target='abc'>Joke 6</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[6])+".html' target='abc'>Joke 7</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[7])+".html' target='abc'>Joke 8</a> <a class='button' onclick='myFunction()' href='./jokes/init"+str(predition[8])+".html' target='abc'>Joke 9</a> <a class='button' onclick='myFunction()'  href='./jokes/init"+str(predition[9])+".html' target='abc'>Joke 10</a>"
 print "<iframe frameborder='0' width='100%' src='./ind2.html' name='abc' id='frameid'></iframe>"
 print "</div>"
 print "<script language='javascript'>"
-print "count=0;"
-print "var myFunction=function(){"
-print "console.log(count);"
-print "count++;"
-print "if(count==1) document.getElementById('title').className = 'glory';"
-print "else if(count==2) document.getElementById('title').className = 'glory2';"
-print "else if(count==3) document.getElementById('title').className = 'glory3';"
-print "else if(count==4) document.getElementById('title').className = 'glory4';"
-print "else if(count==5) document.getElementById('title').className = 'glory5';"
-print "else if(count==6) document.getElementById('title').className = 'glory6';"
-print "else if(count==7) document.getElementById('title').className = 'glory7';"
-print "else if(count==8) document.getElementById('title').className = 'glory8';"
-print "else document.getElementById('title').className = 'glory9';};"
+print "var add = (function () {";
+print "var count = 0;";
+print "return function () {return count += 1;}";
+print "})();";
+print "var myFunction=function()";
+print "{";
+print "var c=add();";
+print "if(c<=9)";
+print "document.getElementById('title').className = 'glory'+c;";
+print "};";
 print "</script>"
 print "</body>"
 

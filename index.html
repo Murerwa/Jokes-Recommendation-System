@@ -104,10 +104,10 @@ window.onload=reSize;
 
 <div id='Header'> <h1 id="title" class="nonglory" >Jokes Recommendation App</h1> </div>
 <div id='Body'>
-    <a class='button' href='./index.html'>Index</a> <a class="button" onclick="myFunction()" href="./jokes/init1.html" target="abc">E Joke 1</a> <a class="button" onclick="myFunction()" href="./jokes/init2.html" target="abc">E Joke 2</a> <a class="button" onclick="myFunction()" href="./jokes/init3.html" target="abc">E Joke 3</a> <a class="button" onclick="myFunction()" href="./jokes/init4.html" target="abc">E Joke 4</a> <a class="button" onclick="myFunction()" href="./jokes/init5.html" target="abc">E Joke 5</a> <a class="button" onclick="myFunction()" href="./jokes/init6.html" target="abc">E Joke 6</a> <a class="button" onclick="myFunction()" href="./jokes/init7.html" target="abc">E Joke 7</a> <a class="button" onclick="myFunction()" href="./jokes/init8.html" target="abc">E Joke 8</a> <a class="button" onclick="myFunction()" href="./jokes/init9.html" target="abc">E Joke 9</a> <a class="button" onclick="myFunction()"  href="./jokes/init10.html" target="abc">E Joke 10</a>
+    <a class='button' href='./recommendation_index.html'>Index</a> <a class="button" onclick="myFunction()" href="./jokes/init1.html" target="abc">E Joke 1</a> <a class="button" onclick="myFunction()" href="./jokes/init2.html" target="abc">E Joke 2</a> <a class="button" onclick="myFunction()" href="./jokes/init3.html" target="abc">E Joke 3</a> <a class="button" onclick="myFunction()" href="./jokes/init4.html" target="abc">E Joke 4</a> <a class="button" onclick="myFunction()" href="./jokes/init5.html" target="abc">E Joke 5</a> <a class="button" onclick="myFunction()" href="./jokes/init6.html" target="abc">E Joke 6</a> <a class="button" onclick="myFunction()" href="./jokes/init7.html" target="abc">E Joke 7</a> <a class="button" onclick="myFunction()" href="./jokes/init8.html" target="abc">E Joke 8</a> <a class="button" onclick="myFunction()" href="./jokes/init9.html" target="abc">E Joke 9</a> <a class="button" onclick="myFunction()"  href="./jokes/init10.html" target="abc">E Joke 10</a>
     <div style="padding-top: 5%">
     <form style="text-align:center" action='index.py' method='POST' id='carform'>
-    <input type='submit' style="font-size: 85%; padding: 0.18%" value="Rate Jokes!">
+    <input id="submit" type='submit' style="font-size: 85%; padding: 0.18%" value="Rate Jokes!">
     <label>E Joke 1</label>
     <select name='rate1' form='carform'>
     <option value='-10'>-10</option>
@@ -353,30 +353,16 @@ window.onload=reSize;
     <iframe frameborder="0" width="100%" src="./ind.html" name="abc" id="frameid"></iframe> 
 </div>
 <script language="javascript">
-count=0;
+var add = (function () {
+    var count = 0;
+    return function () {return count += 1;}
+})();
 var myFunction=function()
 {
-    count++;
-    console.log(count)
-    if(count==1)
-        document.getElementById("title").className = "glory";
-    else if(count==2)
-        document.getElementById("title").className = "glory2";
-    else if(count==3)
-        document.getElementById("title").className = "glory3";
-    else if(count==4)
-        document.getElementById("title").className = "glory4";
-    else if(count==5)
-        document.getElementById("title").className = "glory5";
-    else if(count==6)
-        document.getElementById("title").className = "glory6";
-    else if(count==7)
-        document.getElementById("title").className = "glory7";
-    else if(count==8)
-        document.getElementById("title").className = "glory8";
-    else if(count==9)
-        document.getElementById("title").className = "glory9";
-    else if(count==10)
+    var c=add();
+    if(c<=9)
+        document.getElementById("title").className = "glory"+c;
+    else
         document.getElementById("submit").className = "light";
 };
 </script>
